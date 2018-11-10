@@ -6,9 +6,9 @@
   "author": "Aaron Vanston <aaronvanston@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build",
-    "start": "next start",
     "deploy": "now --public && now alias",
     "deploy:cleanup": "now rm aaronvanston.tech --safe --yes"
   },
@@ -19,6 +19,7 @@
     "styled-components": "^4.0.3"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "next-offline": "^3.0.4"
   }
 }
