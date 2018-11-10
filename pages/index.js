@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Title = styled.h1`
-  color: blue;
+  color: green;
 `
 
 export default () => <Title>Welcome!!!</Title>
