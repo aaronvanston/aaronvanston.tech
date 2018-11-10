@@ -1,25 +1,19 @@
 {
   "name": "aaronvanston.tech",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aaronvanston/aaronvanston.tech.git",
+  "author": "Aaron Vanston <aaronvanston@gmail.com>",
+  "license": "MIT",
   "dependencies": {
+    "next": "^7.0.2",
     "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "react-dom": "^16.6.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now --public && now alias && now rm aaronvanston.tech --safe --yes"
+  }
 }
