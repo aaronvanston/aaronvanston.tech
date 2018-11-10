@@ -5,15 +5,19 @@
   "repository": "https://github.com/aaronvanston/aaronvanston.tech.git",
   "author": "Aaron Vanston <aaronvanston@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "next": "^7.0.2",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "deploy": "now --public && now alias && now rm aaronvanston.tech --safe --yes"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "styled-components": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.8.0"
   }
 }

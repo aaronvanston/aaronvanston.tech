@@ -1,0 +1,9 @@
+{
+  "name": "AaronVanston Tech Portfolio",
+  "short_name": "AaronVanston",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "theme_color":"#000",
+  "description": "A tech portolfio for Aaron Vanston, Front-end developer in Melbourne."
+}
