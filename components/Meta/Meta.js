@@ -5,9 +5,12 @@ const Meta = () => (
     <link rel="shortcut icon" href="/static/images/favicon.png" />
     <link rel="manifest" href="/static/manifest.json" />
     <title>Aaron Vanston</title>
-    <meta name="Description" content="A tech portolfio for Aaron Vanston, Front-end developer in Melbourne."></meta>
+    <meta
+      name="Description"
+      content="A tech portfolio for Aaron Vanston, Front-end developer in Melbourne."
+    />
     <meta name="theme-color" content="#000" />
   </>
-);
+)
 
-export default Meta;
+export default Meta
