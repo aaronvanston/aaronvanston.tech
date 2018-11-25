@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Container from '../Container/Container'
 
-import logo from '../../static/images/logo.svg'
+import logo from './logo.svg'
 
 const Logo = styled.img`
   height: 2rem;
