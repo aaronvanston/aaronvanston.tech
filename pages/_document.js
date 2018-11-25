@@ -3,7 +3,7 @@ import { ServerStyleSheet } from "styled-components"
 import { Normalize } from 'styled-normalize'
 
 import Meta from '../components/Meta/Meta'
-import GlobalStyles from './GlobalStyles'
+import GlobalStyles from '../GlobalStyles'
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
