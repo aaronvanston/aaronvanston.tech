@@ -3,18 +3,22 @@ import styled from 'styled-components'
 
 import Container from '../Container/Container'
 
-const Wraper = styled.div`
-  background-color: green;
-  min-height: 1rem;
+
+const Inner = styled.div`
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const Header = () => {
   return (
-    <Wraper>
-      <Container>
-        Header
-      </Container>
-    </Wraper>
+    <Container>
+      <Inner>
+        <div>Aaron Vanston</div>
+        <div>NAV</div>
+      </Inner>
+    </Container>
   );
 };
 

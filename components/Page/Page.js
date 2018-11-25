@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #ffffff;
 `
 
 const Inner = styled.div`
