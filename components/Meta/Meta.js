@@ -10,6 +10,7 @@ const Meta = () => (
       content="A tech portfolio for Aaron Vanston, Front-end developer in Melbourne."
     />
     <meta name="theme-color" content="#000" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet"></link>
   </>
 )
 

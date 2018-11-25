@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: #000000;
+    font-family: 'Muli', sans-serif;
+    font-display: swap;
   }
 `
 

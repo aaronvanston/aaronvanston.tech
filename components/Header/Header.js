@@ -3,6 +3,12 @@ import styled from 'styled-components'
 
 import Container from '../Container/Container'
 
+import logo from '../../static/images/logo.svg'
+
+const Logo = styled.img`
+  height: 2rem;
+  width: auto;
+`
 
 const Inner = styled.div`
   min-height: 5rem;
@@ -15,7 +21,7 @@ const Header = () => {
   return (
     <Container>
       <Inner>
-        <div>Aaron Vanston</div>
+        <Logo src={logo} alt="Aaron Vanston" />
         <div>NAV</div>
       </Inner>
     </Container>
