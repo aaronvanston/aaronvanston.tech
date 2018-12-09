@@ -4,4 +4,4 @@ const Title = styled.h1`
   color: red;
 `
 
-export default () => <Title>Index</Title>
+export default () => <Title>Blog</Title>

@@ -8,11 +8,15 @@ const Wraper = styled.div`
   min-height: 3rem;
 `
 
+const FooterText = styled.p`
+  color: #fff;
+`
+
 const Footer = () => {
   return (
     <Wraper>
       <Container>
-        Footer
+        <FooterText>Footer</FooterText>
       </Container>
     </Wraper>
   );

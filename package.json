@@ -15,6 +15,7 @@
   "dependencies": {
     "next": "^7.0.2",
     "next-images": "^1.0.1",
+    "next-nprogress": "^1.4.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "styled-components": "^4.0.3",

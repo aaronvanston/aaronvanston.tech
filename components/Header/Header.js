@@ -2,13 +2,9 @@ import React from 'react';
 import styled from 'styled-components'
 
 import Container from '../Container/Container'
+import Logo from '../Logo/Logo'
+import Nav from '../Nav/Nav'
 
-import logo from './logo.svg'
-
-const Logo = styled.img`
-  height: 2rem;
-  width: auto;
-`
 
 const Inner = styled.div`
   min-height: 5rem;
@@ -21,8 +17,8 @@ const Header = () => {
   return (
     <Container>
       <Inner>
-        <Logo src={logo} alt="Aaron Vanston" />
-        <div>NAV</div>
+        <Logo />
+        <Nav />
       </Inner>
     </Container>
   );

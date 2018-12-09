@@ -3,7 +3,13 @@
   "name": "aaronvanston.tech",
   "alias": "aaronvanston.tech",
   "builds": [
-      { "src": "next.config.js", "use": "@now/next" },
-      { "src": "static/**/*", "use": "@now/static" }
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    },
+    {
+      "src": "static/**/*",
+      "use": "@now/static"
+    }
   ]
 }

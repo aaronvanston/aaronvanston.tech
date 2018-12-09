@@ -16,6 +16,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Muli', sans-serif;
     font-display: swap;
   }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
 `
 
 export default GlobalStyles
