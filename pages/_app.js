@@ -3,7 +3,8 @@ import NProgress from "next-nprogress/component";
 import { Normalize } from 'styled-normalize'
 
 import Page from "../components/Page/Page";
-import GlobalStyles from '../GlobalStyles'
+import GlobalStyles from '../styles/GlobalStyles'
+import FontFaces from '../styles/FontFaces'
 
 class _App extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -25,8 +26,11 @@ class _App extends App {
             options={{ trickleSpeed: 50 }}
             showAfterMs={300}
             spinner />
+
           <Normalize />
           <GlobalStyles />
+          <FontFaces />
+
           <Component {...pageProps} />
         </Page>
       </Container>

@@ -14,7 +14,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: #000000;
     font-family: 'Muli', sans-serif;
-    font-display: swap;
   }
 
   a {
@@ -25,7 +24,6 @@ const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3 ,h4 ,h5 ,h6 {
     font-family: 'Merriweather', serif;
-    font-display: swap;
   }
 `
 
