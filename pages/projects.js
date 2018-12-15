@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import PageTitle from '../components/PageTitle/PageTitle'
+import Container from '../components/Container/Container'
 
-const Title = styled.h1`
-  color: red;
-`
-
-export default () => <Title>Projects</Title>
+export default () => (
+  <Container>
+    <PageTitle>My projects —</PageTitle>
+  </Container>
+)
