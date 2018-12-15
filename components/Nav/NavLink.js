@@ -19,8 +19,8 @@ const StyledAnchor = styled.a`
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
   transition: color .3s ease-in-out .1s,border-color .3s ease-in-out .1s;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1rem;
   letter-spacing: .6px;
   margin-left: 2rem;
