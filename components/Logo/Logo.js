@@ -12,7 +12,7 @@ const StyledLogo = styled.a`
 const Logo = () => {
   return (
     <Link href="/">
-      <StyledLogo>Aaron Vanston</StyledLogo>
+      <StyledLogo>AV</StyledLogo>
     </Link>
   );
 };

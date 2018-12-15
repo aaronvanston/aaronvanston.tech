@@ -1,5 +1,5 @@
 const theme = {
-  maxWidth: '75rem', // 1200px
+  maxWidth: '85rem', // 1360px
 
   baseTextColor: '#141414'
 }

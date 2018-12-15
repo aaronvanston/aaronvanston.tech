@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import Hero from '../components/Hero/Hero'
+import Container from '../components/Container/Container'
 
-const Title = styled.h1`
-  color: red;
-`
-
-export default () => <Title>Index</Title>
+export default () => (
+  <Container>
+    <Hero />
+  </Container>
+)
