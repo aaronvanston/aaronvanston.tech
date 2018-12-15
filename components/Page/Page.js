@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components'
 
-import theme from './themeSettings'
+import theme from '../../utils/themeSettings'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'

@@ -1,14 +1,25 @@
 import React from 'react';
 import styled from 'styled-components'
 
+import media from '../../utils/media'
+
 const Wrapper = styled.div`
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+  ${media.tablet`
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  `}
 `
 
 const H1 = styled.h1`
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
+
+  ${media.tablet`
+    font-size: 4rem;
+  `}
 `
 
 const Sub = styled.span`
@@ -17,9 +28,13 @@ const Sub = styled.span`
 
 const Description = styled.p`
   margin-top: 2rem;
-  font-size: 1.5rem;
-  max-width: 50%;
+  font-size: 1rem;
   line-height: 1.5;
+
+  ${media.tablet`
+    font-size: 1.5rem;
+    max-width: 50%;
+  `}
 `
 
 const Hero = () => {

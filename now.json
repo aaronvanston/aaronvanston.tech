@@ -11,5 +11,8 @@
       "src": "static/**/*",
       "use": "@now/static"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
