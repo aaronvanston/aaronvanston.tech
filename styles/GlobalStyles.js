@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #000000;
+    background-color: ${props => props.theme.backgroundColorOverflow};;
     font-family: 'Muli', sans-serif;
   }
 
@@ -24,6 +24,11 @@ const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3 ,h4 ,h5 ,h6 {
     font-family: 'Merriweather', serif;
+  }
+
+  ::selection {
+    background-color: ${props => props.theme.highlightColor};
+    color: ${props => props.theme.baseTextColor};
   }
 `
 

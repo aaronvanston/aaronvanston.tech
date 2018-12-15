@@ -2,6 +2,10 @@ const theme = {
   maxWidth: '85rem', // 1360px
 
   baseTextColor: '#141414',
+  highlightColor: '#ff6441',
+
+  backgroundColor: '#fff',
+  backgroundColorOverflow: '#000',
 
   media: {
     desktop: 1024,
