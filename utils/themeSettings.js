@@ -6,7 +6,7 @@ const theme = {
   media: {
     desktop: 1024,
     tablet: 768,
-    phone: 576,
+    mobile: 576,
   }
 }
 

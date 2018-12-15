@@ -28,11 +28,18 @@ const Sub = styled.span`
 
 const Description = styled.p`
   margin-top: 2rem;
-  font-size: 1rem;
   line-height: 1.5;
+  font-size: 1.125rem;
+
+  ${media.mobile`
+    max-width: 75%;
+  `}
 
   ${media.tablet`
     font-size: 1.5rem;
+  `}
+
+  ${media.desktop`
     max-width: 50%;
   `}
 `
