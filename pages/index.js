@@ -1,27 +1,20 @@
-import styled from 'styled-components'
-
 import Hero from '../components/Hero/Hero'
 import Container from '../components/Container/Container'
-import SectionTitle from '../components/SectionTitle/SectionTitle'
-
-const Section = styled.section`
-  margin-bottom: 6rem;
-`
+import HomeSection from '../components/HomeSection/HomeSection'
 
 export default () => (
-  <Container>
-    <Hero />
-
-    <Section>
-      <SectionTitle>Recent Projects</SectionTitle>
+  <>
+    <Container>
+      <Hero />
+    </Container>
+    <HomeSection title="Recent Projects">
       {/* Map over 4 highlighted projects */}
       {/* View more */}
-    </Section>
+    </HomeSection>
 
-    <Section>
-      <SectionTitle>Latest Posts</SectionTitle>
+    <HomeSection title="Latest Posts" flipPattern>
       {/* Show latest 5 posts*/}
       {/* View more */}
-    </Section>
-  </Container>
+    </HomeSection>
+  </>
 )

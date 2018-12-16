@@ -3,6 +3,8 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { withRouter } from 'next/router'
 
+import media from '../../utils/media'
+
 const activeStyles = css`
   &:after {
     left: 0;
@@ -19,7 +21,7 @@ const StyledAnchor = styled.a`
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
   transition: color .3s ease-in-out .1s,border-color .3s ease-in-out .1s;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1rem;
   letter-spacing: .6px;
@@ -45,6 +47,10 @@ const StyledAnchor = styled.a`
   }
 
   ${props => props.active && activeStyles}
+
+  ${media.mobile`
+    font-size: 1.125rem;
+  `}
 `
 
 const NavLink = ({ children, to, router }) => {
