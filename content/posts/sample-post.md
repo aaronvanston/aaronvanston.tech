@@ -1,0 +1,10 @@
+---
+title: Sample post
+date: 2018-12-016
+---
+
+Post one
+
+Checkout [Test Link](github.com/aaronvanston)
+
+[internal link test](/projects)

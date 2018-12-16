@@ -5,7 +5,7 @@ import NavLink from './NavLink'
 const Nav = () => (
   <div>
     <NavLink to="/projects">Projects</NavLink>
-    <NavLink to="/blog">Blog</NavLink>
+    <NavLink to="/posts">Blog</NavLink>
   </div>
 );
 

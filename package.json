@@ -13,6 +13,8 @@
     "deploy:cleanup": "now rm aaronvanston.tech --safe --yes"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^0.16.6",
+    "@zeit/next-mdx": "^1.2.0",
     "next": "^7.0.2",
     "next-images": "^1.0.1",
     "next-nprogress": "^1.4.0",
