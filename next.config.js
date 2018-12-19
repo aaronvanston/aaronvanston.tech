@@ -1,7 +1,3 @@
-const withMDX = require("@zeit/next-mdx")({
-  extension: /\.mdx?$/
-})
+const { withNextein } = require('nextein/config')
 
-module.exports = withMDX({
-  pageExtensions: ["js", "md", "mdx"]
-})
+module.exports = withNextein({})

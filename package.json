@@ -6,18 +6,19 @@
   "author": "Aaron Vanston <aaronvanston@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "nextein",
+    "export": "nextein build && nextein export",
     "build": "next build",
     "start": "next start",
     "deploy": "now --public && now alias",
     "deploy:cleanup": "now rm aaronvanston.tech --safe --yes"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^0.16.6",
-    "@zeit/next-mdx": "^1.2.0",
+    "lodash": "^4.17.11",
     "next": "^7.0.2",
     "next-images": "^1.0.1",
     "next-nprogress": "^1.4.0",
+    "nextein": "^2.1.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "styled-components": "^4.0.3",

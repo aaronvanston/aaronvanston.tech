@@ -37,8 +37,8 @@ const Pattern = styled.div`
 
 const ContentWrapper = styled.div`
   @supports (display: grid) {
-    position: absolute;
-    top: 4rem;
+    position: relative;
+    top: -5rem;
   }
 `
 

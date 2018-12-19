@@ -1,5 +1,0 @@
-const posts = []
-
-export {
-  posts,
-}
