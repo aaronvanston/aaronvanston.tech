@@ -1,6 +1,6 @@
 ---
 title: Sample post
-date: 2018-12-016
+date: 2018-12-16
 ---
 
 Post one

@@ -2,6 +2,7 @@ const theme = {
   maxWidth: '85rem', // 1360px
 
   baseTextColor: '#141414',
+  lightTextColor: '#666666',
   highlightColor: '#ff6441',
 
   backgroundColor: '#fff',
