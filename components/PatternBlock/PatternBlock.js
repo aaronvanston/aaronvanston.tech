@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-const size = 0.4;
+const size = 0.5;
 
 const colours = [
   '#F44336',
@@ -24,9 +24,9 @@ const colours = [
 const Pattern = styled.div`
 
   ${props => css`
-    background: radial-gradient(${props.colour} 10%, transparent 11%), radial-gradient(${props.colour} 10%, transparent 11%), white;
+    background: radial-gradient(${props.colour} 0%, transparent 11%), radial-gradient(${props.colour} 10%, transparent 11%), white;
   `}
-  background-position: 0 0, ${size}rem ${size}rem;
+  background-position: 1rem 1rem, ${size}rem ${size}rem;
   background-size: ${size * 2}rem ${size * 2}rem;
   opacity: 0.75;
 

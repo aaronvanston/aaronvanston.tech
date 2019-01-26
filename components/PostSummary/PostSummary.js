@@ -35,7 +35,7 @@ const PostDate = styled.p`
   color: ${props => props.theme.lightTextColor};
 
   ${media.tablet`
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   `}
 `
 
@@ -43,7 +43,6 @@ const PostSummary = ({ posts, postLimit }) => {
   const sortedPosts = posts.sort(sortByDate)
   const summaryPosts = postLimit ? sortedPosts.slice(0, postLimit) : sortedPosts
 
-  console.log(summaryPosts)
   return (
     <div >
       {summaryPosts.map((post, idx) => {

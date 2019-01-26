@@ -9,6 +9,7 @@
     "dev": "nextein",
     "export": "nextein build && nextein export",
     "build": "next build",
+    "now-build": "npm run export",
     "start": "next start",
     "deploy": "now --public && now alias",
     "deploy:cleanup": "now rm aaronvanston.tech --safe --yes"
