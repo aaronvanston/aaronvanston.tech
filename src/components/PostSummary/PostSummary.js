@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { Content } from 'nextein/post'
 import { sortByDate } from 'nextein/posts'
-import Link from 'nextein/link'
+// import Link from 'nextein/link'
 
 import media from '../../utils/media'
 
@@ -48,14 +48,7 @@ const PostSummary = ({ posts, postLimit }) => {
       {summaryPosts.map((post, idx) => {
         const date = new Date(post.data.date).toLocaleDateString('en-AU', dateOptions)
         return (
-          <Link {...post}>
-            <PostLink key={`${post.data.title}-${idx}`}>
-              <Title>{post.data.title}</Title>
-              <Excerpt {...post} excerpt />
-              <PostDate>{date}</PostDate>
-              <div>—</div>
-            </PostLink>
-          </Link>
+          <div>Hi</div>
         )
       })}
     </div>
@@ -63,3 +56,12 @@ const PostSummary = ({ posts, postLimit }) => {
 };
 
 export default PostSummary;
+
+   // <Link {...post}>
+          //   <PostLink key={`${post.data.title}-${idx}`}>
+          //     <Title>{post.data.title}</Title>
+          //     <Excerpt {...post} excerpt />
+          //     <PostDate>{date}</PostDate>
+          //     <div>—</div>
+          //   </PostLink>
+          // </Link>

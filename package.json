@@ -5,27 +5,33 @@
   "repository": "https://github.com/aaronvanston/aaronvanston.tech.git",
   "author": "Aaron Vanston <aaronvanston@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "nextein",
-    "export": "nextein build && nextein export",
-    "build": "next build",
-    "now-build": "npm run export",
-    "start": "next start",
-    "deploy": "now --public && now alias",
-    "deploy:cleanup": "now rm aaronvanston.tech --safe --yes"
-  },
   "dependencies": {
-    "lodash": "^4.17.11",
-    "next": "^7.0.2",
-    "next-images": "^1.0.1",
-    "next-nprogress": "^1.4.0",
-    "nextein": "^2.1.2",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "styled-components": "^4.0.3",
-    "styled-normalize": "^8.0.4"
+    "gatsby": "^2.3.16",
+    "gatsby-image": "^2.0.37",
+    "gatsby-plugin-manifest": "^2.0.28",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.2.0",
+    "styled-normalize": "^8.0.6"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.10.0",
+    "prettier": "^1.16.4"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   }
 }

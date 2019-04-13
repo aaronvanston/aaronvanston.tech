@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-import Link from 'next/link'
+import { Link } from "gatsby"
 
-const StyledLogo = styled.a`
+const StyledLogo = styled(Link)`
   color: ${props => props.theme.baseTextColor};
   font-weight: 800;
   font-style: normal;
@@ -11,9 +11,7 @@ const StyledLogo = styled.a`
 
 const Logo = () => {
   return (
-    <Link href="/">
-      <StyledLogo>AV</StyledLogo>
-    </Link>
+    <StyledLogo to="/">AV</StyledLogo>
   );
 };
 

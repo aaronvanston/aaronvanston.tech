@@ -1,7 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
+import { Link } from "gatsby"
 import styled, { css } from 'styled-components'
-import { withRouter } from 'next/router'
 
 import media from '../../utils/media'
 
@@ -13,7 +12,7 @@ const activeStyles = css`
   }
 `
 
-const StyledAnchor = styled.a`
+const StyledAnchor = styled(Link)`
   color: ${props => props.theme.baseTextColor};
   position: relative;
   line-height: inherit;
@@ -53,13 +52,14 @@ const StyledAnchor = styled.a`
   `}
 `
 
-const NavLink = ({ children, to, router }) => {
-  const isActive = (to == router.asPath);
+const NavLink = ({ children, to, router, ...rest }) => {
+  // const isActive = (to === router.asPath) || false;
+  console.log(rest)
   return (
-    <Link href={to}>
-      <StyledAnchor active={isActive}>{children}</StyledAnchor>
-    </Link>
+    <StyledAnchor to={to}>{children}</StyledAnchor>
   );
 };
 
-export default withRouter(NavLink);
+export default NavLink;
+
+// active={isActive}

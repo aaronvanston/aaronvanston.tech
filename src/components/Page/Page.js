@@ -1,10 +1,9 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components'
-
-import theme from '../../utils/themeSettings'
+import styled from 'styled-components'
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Document from '../Document/Document'
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,13 +17,13 @@ const Inner = styled.div`
 `
 
 const Page = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <Document>
     <Wrapper>
       <Header />
       <Inner>{children}</Inner>
       <Footer />
     </Wrapper>
-  </ThemeProvider>
+  </Document>
 );
 
 export default Page;
