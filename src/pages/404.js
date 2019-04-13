@@ -2,6 +2,7 @@ import React from "react"
 
 // import Layout from "../components/layout"
 // import SEO from "../components/seo"
+// <SEO title="404: Not found" />
 
 const NotFoundPage = () => (
   <div>
@@ -11,6 +12,3 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
-
-{/* <SEO title="404: Not found" /> */ }
-

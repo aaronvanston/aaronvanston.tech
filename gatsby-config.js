@@ -27,9 +27,6 @@ module.exports = {
         name: "projects",
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,22 +37,13 @@ module.exports = {
         display: `fullscreen`,
         background_color: `#fff`,
         theme_color: `#000`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-        icons: [
-          {
-            src: `src/images/icon-192.png`,
-            sizes: `192x192`,
-            type: `image/png`
-          },
-          {
-            src: `src/images/icon-512.png`,
-            sizes: `512x512`,
-            type: `image/png`
-          }
-        ]
+        icon: `src/images/icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-styled-components`
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-offline`
   ],
 }

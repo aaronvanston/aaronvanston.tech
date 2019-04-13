@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components'
 
 // Refactor to reuse navlink, switch colours
