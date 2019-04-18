@@ -19,15 +19,15 @@ const theme = {
     mobile: 576,
   },
 
-  colour,
-
-  baseTextColour: colour.dark,
+  baseTextColour: colour.darkGrey,
   lightTextColour: colour.grey,
   highlightColour: colour.primary,
   linkColor: colour.primary,
 
   backgroundColour: colour.white,
   backgroundColourOverflow: colour.black,
+
+  colour,
 }
 
 export default theme
