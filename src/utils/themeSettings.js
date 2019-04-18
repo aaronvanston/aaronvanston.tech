@@ -1,9 +1,11 @@
 const colour = {
   primary: '#ff6441',
-  light: '#666666',
-  dark: '#141414',
+  lightGrey: '#c6cbd1',
+  grey: '#666666',
+  darkGrey: '#141414',
 
   white: '#fff',
+  offWhite: '#f6f8fa',
   black: '#000',
 }
 
@@ -11,19 +13,21 @@ const colour = {
 const theme = {
   maxWidth: '85rem', // 1360px
 
+  media: {
+    desktop: 1024,
+    tablet: 768,
+    mobile: 576,
+  },
+
+  colour,
+
   baseTextColour: colour.dark,
-  lightTextColour: colour.light,
+  lightTextColour: colour.grey,
   highlightColour: colour.primary,
   linkColor: colour.primary,
 
   backgroundColour: colour.white,
   backgroundColourOverflow: colour.black,
-
-  media: {
-    desktop: 1024,
-    tablet: 768,
-    mobile: 576,
-  }
 }
 
 export default theme

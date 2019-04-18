@@ -21,7 +21,7 @@ const Content = styled.div`
 
   /* Code and Syntax  Highlighting */
   pre {
-    background-color: #f6f8fa;
+    background-color: ${props => props.theme.colour.offWhite};
     border-radius: 3px;
     font-size: 0.875rem;
     line-height: 1.45;
@@ -39,16 +39,16 @@ const Content = styled.div`
     border-spacing: 0;
 
     tr  {
-      background-color: #fff;
-      border-top: 1px solid #c6cbd1;
+      background-color: ${props => props.theme.colour.white};
+      border-top: 1px solid ${props => props.theme.colour.lightGrey};
 
       &:nth-child(2n) {
-        background-color: #f6f8fa;
+        background-color: ${props => props.theme.colour.offWhite};
       }
     }
 
     th, td {
-      border: 1px solid #dfe2e5;
+      border: 1px solid ${props => props.theme.colour.lightGrey};
       padding: 0.375rem 0.75rem;
     }
   }
@@ -56,7 +56,7 @@ const Content = styled.div`
   /* Blockquotes */
   blockquote {
     margin: 0;
-    border-left: 0.25rem solid #dfe2e5;
+    border-left: 0.25rem solid ${props => props.theme.colour.lightGrey};
     color: ${props => props.theme.lightTextColour};
     padding: 0 1rem;
   }
@@ -65,7 +65,7 @@ const Content = styled.div`
   hr {
     overflow: hidden;
     background: transparent;
-    background-color: #e1e4e8;
+    background-color: ${props => props.theme.colour.lightGrey};
     border: 0;
     height: 0.25rem;
     margin: 1.5rem 0;
