@@ -1,21 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-export default function Template({ data }) {
+import Page from '../components/Page/Page'
+import Container from '../components/Container/Container'
+import PageTitle from '../components/PageTitle/PageTitle'
+
+const PostTemplate = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
+    <Page>
+      <Container>
+        <PageTitle>{frontmatter.title}</PageTitle>
         <h2>{frontmatter.date}</h2>
         <div
-          className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-      </div>
-    </div>
+      </Container>
+    </Page>
   )
 }
 
@@ -31,3 +34,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default PostTemplate

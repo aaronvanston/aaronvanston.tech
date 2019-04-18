@@ -41,25 +41,17 @@ const StyledAnchor = styled(Link)`
     transition: width .3s cubic-bezier(.37,0,.21,1.02);
   }
 
-  &:hover {
+  &:hover, &.active {
     ${activeStyles}
   }
-
-  ${props => props.active && activeStyles}
 
   ${media.mobile`
     font-size: 1.125rem;
   `}
 `
 
-const NavLink = ({ children, to, router, ...rest }) => {
-  // const isActive = (to === router.asPath) || false;
-  console.log(rest)
-  return (
-    <StyledAnchor to={to}>{children}</StyledAnchor>
-  );
-};
+const NavLink = ({ children, to, router }) => (
+  <StyledAnchor activeClassName="active" to={to}>{children}</StyledAnchor>
+);
 
 export default NavLink;
-
-// active={isActive}

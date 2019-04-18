@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components'
-
-import { Content } from 'nextein/post'
-import { sortByDate } from 'nextein/posts'
-// import Link from 'nextein/link'
+import { Link } from "gatsby"
 
 import media from '../../utils/media'
 
-const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+// const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
 
-const PostLink = styled.a`
+// // TODO: move to util file
+// const formatDate = (date) =>
+//   new Date(date).toLocaleDateString('en-AU', dateOptions)
+
+const PostLink = styled(Link)`
   display: block;
   margin-bottom: 3rem;
 `
@@ -23,7 +24,7 @@ const Title = styled.h3`
   }
 `
 
-const Excerpt = styled(Content)`
+const Excerpt = styled.div`
   font-size: 1rem;
   margin-top: 0;
 `
@@ -39,16 +40,19 @@ const PostDate = styled.p`
   `}
 `
 
-const PostSummary = ({ posts, postLimit }) => {
-  const sortedPosts = posts.sort(sortByDate)
-  const summaryPosts = postLimit ? sortedPosts.slice(0, postLimit) : sortedPosts
-
+const PostSummary = ({ posts }) => {
   return (
-    <div >
-      {summaryPosts.map((post, idx) => {
-        const date = new Date(post.data.date).toLocaleDateString('en-AU', dateOptions)
+    <div>
+      {posts.map((postNode) => {
+        const { frontmatter, id, excerpt } = postNode.node
+        const post = { ...frontmatter, id, excerpt }
         return (
-          <div>Hi</div>
+          <PostLink key={post.id} to={post.path}>
+            <Title>{post.title}</Title>
+            <Excerpt>{post.excerpt}</Excerpt>
+            <PostDate>{post.date}</PostDate>
+            <div>—</div>
+          </PostLink>
         )
       })}
     </div>
@@ -56,12 +60,3 @@ const PostSummary = ({ posts, postLimit }) => {
 };
 
 export default PostSummary;
-
-   // <Link {...post}>
-          //   <PostLink key={`${post.data.title}-${idx}`}>
-          //     <Title>{post.data.title}</Title>
-          //     <Excerpt {...post} excerpt />
-          //     <PostDate>{date}</PostDate>
-          //     <div>—</div>
-          //   </PostLink>
-          // </Link>
