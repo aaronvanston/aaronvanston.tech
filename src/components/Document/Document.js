@@ -1,6 +1,7 @@
 import React from 'react';
 import { Normalize } from 'styled-normalize'
 import { ThemeProvider } from 'styled-components'
+import Helmet from "react-helmet"
 
 import theme from '../../utils/themeSettings'
 import GlobalStyles from '../../styles/GlobalStyles'
@@ -11,6 +12,9 @@ const Document = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <Helmet>
+          <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        </Helmet>
         <Normalize />
         <GlobalStyles />
         <FontFaces />
