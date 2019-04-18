@@ -43,6 +43,7 @@ const StyledAnchor = styled(Link)`
 
   &:hover, &.active {
     ${activeStyles}
+    text-decoration: none;
   }
 
   ${media.mobile`
