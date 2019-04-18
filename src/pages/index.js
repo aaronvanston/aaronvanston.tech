@@ -8,9 +8,6 @@ import Container from '../components/Container/Container'
 import HomeSection from '../components/HomeSection/HomeSection'
 import PostSummary from '../components/PostSummary/PostSummary'
 
-// import Layout from "../components/layout"
-// import Image from "../components/image"
-// import SEO from "../components/seo"
 
 // const IndexPage = () => (
 //   <Layout>
@@ -31,7 +28,8 @@ const Home = ({ data: { posts, projects } }) => (
     </Container>
 
     <HomeSection title="Recent Projects">
-
+      {/* Temp Section while project summary is created */}
+      <PostSummary posts={projects.edges} />
     </HomeSection>
 
     <HomeSection title="Latest Posts" flipPattern>

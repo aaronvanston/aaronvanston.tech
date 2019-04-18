@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from '../../utils/themeSettings'
 import GlobalStyles from '../../styles/GlobalStyles'
 import FontFaces from '../../styles/FontFaces'
+import Meta from '../Meta/Meta'
 
 const Document = ({ children }) => {
   return (
@@ -13,7 +14,11 @@ const Document = ({ children }) => {
         <Normalize />
         <GlobalStyles />
         <FontFaces />
-        {children}
+        <div>
+          <Meta />
+          {children}
+
+        </div>
       </>
     </ThemeProvider>
   );

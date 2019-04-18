@@ -1,16 +1,81 @@
-const Meta = () => (
-  <>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charSet="utf-8" />
-    <link rel="shortcut icon" href="/static/images/favicon.png" />
-    <link rel="manifest" href="/static/manifest.json" />
-    <title>Aaron Vanston</title>
-    <meta
-      name="Description"
-      content="A tech portfolio for Aaron Vanston, Front-end developer in Melbourne."
-    />
-    <meta name="theme-color" content="#000" />
-  </>
-)
+import React from "react"
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default Meta
+const Meta = ({ description, lang, meta, keywords, title }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `
+  )
+  const metaDescription = description || site.siteMetadata.description
+
+  return (
+    <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      defaultTitle={site.siteMetadata.title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+      ].concat(
+        keywords.length > 0
+          ? {
+            name: `keywords`,
+            content: keywords.join(`, `),
+          }
+          : []
+      ).concat(meta)}
+    />
+  );
+};
+
+Meta.defaultProps = {
+  lang: `en`,
+  meta: [],
+  keywords: [],
+  description: ``,
+}
+
+export default Meta;
