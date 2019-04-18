@@ -13,7 +13,7 @@ const Document = ({ children }) => {
     <ThemeProvider theme={theme}>
       <>
         <Helmet>
-          <link rel="preconnect" href="https://fonts.gstatic.com/" />
+          <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
         </Helmet>
         <Normalize />
         <GlobalStyles />
