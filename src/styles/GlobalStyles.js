@@ -12,14 +12,18 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.backgroundColorOverflow};;
+    background-color: ${props => props.theme.backgroundColourOverflow};
     font-family: 'Muli', sans-serif;
   }
 
   a {
-    color: inherit;
+    color: ${props => props.theme.linkColor};
     text-decoration: none;
     cursor: pointer;
+    
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   h1, h2, h3 ,h4 ,h5 ,h6 {
@@ -27,8 +31,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::selection {
-    background-color: ${props => props.theme.highlightColor};
-    color: ${props => props.theme.baseTextColor};
+    background-color: ${props => props.theme.highlightColour};
+    color: ${props => props.theme.baseTextColour};
   }
 `
 

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 
 const StyledLogo = styled(Link)`
-  color: ${props => props.theme.baseTextColor};
+  color: ${props => props.theme.baseTextColour};
   font-weight: 800;
   font-style: normal;
   font-size: 1.5rem;

@@ -5,6 +5,7 @@ import Page from '../components/Page/Page'
 import Container from '../components/Container/Container'
 import PageTitle from '../components/PageTitle/PageTitle'
 import Meta from '../components/Meta/Meta'
+import Content from '../components/Content/Content'
 
 const PostTemplate = ({ data }) => {
   const { markdownRemark } = data
@@ -16,7 +17,7 @@ const PostTemplate = ({ data }) => {
       <Container>
         <PageTitle>{frontmatter.title}</PageTitle>
         <h2>{frontmatter.date}</h2>
-        <div
+        <Content
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </Container>

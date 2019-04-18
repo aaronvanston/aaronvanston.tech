@@ -13,7 +13,7 @@ const activeStyles = css`
 `
 
 const StyledAnchor = styled(Link)`
-  color: ${props => props.theme.baseTextColor};
+  color: ${props => props.theme.baseTextColour};
   position: relative;
   line-height: inherit;
   display: inline-block;

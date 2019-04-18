@@ -4,15 +4,14 @@ import { Link } from "gatsby"
 
 import media from '../../utils/media'
 
-// const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
-
-// // TODO: move to util file
-// const formatDate = (date) =>
-//   new Date(date).toLocaleDateString('en-AU', dateOptions)
-
 const PostLink = styled(Link)`
   display: block;
   margin-bottom: 3rem;
+  color: ${props => props.theme.baseTextColour};
+
+  :hover {
+    text-decoration: none;
+  }
 `
 
 const Title = styled.h3`
@@ -33,7 +32,7 @@ const PostDate = styled.p`
   margin-top: 1rem;
   margin-bottom: 0.125rem;
   font-size: 0.875rem;
-  color: ${props => props.theme.lightTextColor};
+  color: ${props => props.theme.lightTextColour};
 
   ${media.tablet`
     margin-top: 1.5rem;

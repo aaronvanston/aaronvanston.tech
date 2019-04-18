@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   flex: 1;
+  margin-bottom: 2rem;
 `
 
 const Page = ({ children }) => (

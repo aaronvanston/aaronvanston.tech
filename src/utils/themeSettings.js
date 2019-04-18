@@ -1,12 +1,23 @@
+const colour = {
+  primary: '#ff6441',
+  light: '#666666',
+  dark: '#141414',
+
+  white: '#fff',
+  black: '#000',
+}
+
+
 const theme = {
   maxWidth: '85rem', // 1360px
 
-  baseTextColor: '#141414',
-  lightTextColor: '#666666',
-  highlightColor: '#ff6441',
+  baseTextColour: colour.dark,
+  lightTextColour: colour.light,
+  highlightColour: colour.primary,
+  linkColor: colour.primary,
 
-  backgroundColor: '#fff',
-  backgroundColorOverflow: '#000',
+  backgroundColour: colour.white,
+  backgroundColourOverflow: colour.black,
 
   media: {
     desktop: 1024,
