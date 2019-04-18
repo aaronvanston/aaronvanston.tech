@@ -4,7 +4,7 @@ const FontFaces = createGlobalStyle`
 /* cyrillic-ext */
 @font-face {
   font-family: 'Merriweather';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZVcf6hPvhPUWH.woff2) format('woff2');
@@ -14,7 +14,7 @@ const FontFaces = createGlobalStyle`
 /* cyrillic */
 @font-face {
   font-family: 'Merriweather';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZXMf6hPvhPUWH.woff2) format('woff2');
@@ -24,7 +24,7 @@ const FontFaces = createGlobalStyle`
 /* vietnamese */
 @font-face {
   font-family: 'Merriweather';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZV8f6hPvhPUWH.woff2) format('woff2');
@@ -34,7 +34,7 @@ const FontFaces = createGlobalStyle`
 /* latin-ext */
 @font-face {
   font-family: 'Merriweather';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZVsf6hPvhPUWH.woff2) format('woff2');
@@ -44,7 +44,7 @@ const FontFaces = createGlobalStyle`
 /* latin */
 @font-face {
   font-family: 'Merriweather';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Merriweather Bold'), local('Merriweather-Bold'), url(https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6hPvhPQ.woff2) format('woff2');
@@ -54,7 +54,7 @@ const FontFaces = createGlobalStyle`
 /* vietnamese */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format('woff2');
@@ -64,7 +64,7 @@ const FontFaces = createGlobalStyle`
 /* latin-ext */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format('woff2');
@@ -74,7 +74,7 @@ const FontFaces = createGlobalStyle`
 /* latin */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v12/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format('woff2');
@@ -84,7 +84,7 @@ const FontFaces = createGlobalStyle`
 /* vietnamese */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adYnjOCr2z24PMFk-0g.woff2) format('woff2');
@@ -94,7 +94,7 @@ const FontFaces = createGlobalStyle`
 /* latin-ext */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adYnjOCv2z24PMFk-0g.woff2) format('woff2');
@@ -104,7 +104,7 @@ const FontFaces = createGlobalStyle`
 /* latin */
 @font-face {
   font-family: 'Muli';
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v12/7Au_p_0qiz-adYnjOCX2z24PMFk.woff2) format('woff2');
