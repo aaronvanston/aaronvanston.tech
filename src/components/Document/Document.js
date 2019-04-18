@@ -14,11 +14,8 @@ const Document = ({ children }) => {
         <Normalize />
         <GlobalStyles />
         <FontFaces />
-        <div>
-          <Meta />
-          {children}
-
-        </div>
+        <Meta />
+        {children}
       </>
     </ThemeProvider>
   );

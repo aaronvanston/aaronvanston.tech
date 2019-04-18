@@ -4,11 +4,12 @@ import Page from '../components/Page/Page'
 import PageTitle from '../components/PageTitle/PageTitle'
 import Container from '../components/Container/Container'
 import PostSummary from '../components/PostSummary/PostSummary'
+import Meta from '../components/Meta/Meta'
 
 const posts = ({ data: { allMarkdownRemark: { edges: posts } } }) => {
-  console.log(posts)
   return (
     <Page>
+      <Meta title="Posts" />
       <Container>
         <PageTitle>Latest blog posts —</PageTitle>
         <PostSummary posts={posts} />
