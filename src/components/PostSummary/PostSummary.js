@@ -48,7 +48,7 @@ const PostSummary = ({ posts }) => {
         return (
           <PostLink key={post.id} to={post.path}>
             <Title>{post.title}</Title>
-            <Excerpt>{post.excerpt}</Excerpt>
+            <Excerpt>{post.subtitle || post.excerpt}</Excerpt>
             <PostDate>{post.date}</PostDate>
             <div>—</div>
           </PostLink>

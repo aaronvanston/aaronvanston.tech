@@ -1,11 +1,16 @@
 import styled from 'styled-components'
 
 import '../../styles/code-theme.css'
+import media from '../../utils/media'
 
 const Content = styled.div`
   /* General */
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
+
+  ${media.mobile`
+    font-size: 1.25rem;
+  `}
 
   /* Overrides */
   blockquote, details, dl, ol, p, pre, table, ul {

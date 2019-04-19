@@ -3,22 +3,21 @@ import { graphql } from "gatsby"
 
 import Page from '../components/Page/Page'
 import Container from '../components/Container/Container'
-import PageTitle from '../components/PageTitle/PageTitle'
 import Meta from '../components/Meta/Meta'
 import Content from '../components/Content/Content'
 import HeroImage from '../components/HeroImage/HeroImage'
+import PostHeader from '../components/PostHeader/PostHeader'
 
 const PostTemplate = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { title, date, hero } = frontmatter
+  const { title, date, hero, subtitle } = frontmatter
 
   return (
     <Page>
       <Meta title={title} />
       <Container tight>
-        <PageTitle>{title}</PageTitle>
-        <h2>{date}</h2>
+        <PostHeader title={title} subtitle={subtitle} date={date} />
       </Container>
       <HeroImage heroImage={hero} />
       <Container tight>
@@ -38,6 +37,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        subtitle
         hero {
           childImageSharp{
             sizes(maxWidth: 1024) {
