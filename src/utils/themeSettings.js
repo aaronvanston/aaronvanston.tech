@@ -12,6 +12,7 @@ const colour = {
 
 const theme = {
   maxWidth: '85rem', // 1360px
+  maxWidthSmall: '50rem', // 800px
 
   media: {
     desktop: 1024,

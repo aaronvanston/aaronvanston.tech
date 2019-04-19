@@ -56,12 +56,18 @@ module.exports = {
           },
           {
             resolve: "gatsby-remark-external-links",
-          }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1024,
+            },
+          },
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`
