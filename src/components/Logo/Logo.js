@@ -7,6 +7,10 @@ const StyledLogo = styled(Link)`
   font-weight: 800;
   font-style: normal;
   font-size: 1.5rem;
+
+  :hover {
+    text-decoration: none;
+  }
 `
 
 const Logo = () => {

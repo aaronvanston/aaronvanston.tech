@@ -52,7 +52,7 @@ const Hero = () => {
         Front-end developer.
       </H1>
       <Description>
-        Hi, I'm Aaron Vanston, a front-end developer based in Melbourne, Australia. I specialise in delivering rich customer-centric experiences. Currently focusing on ReactJS based applications.
+        Hi, I'm Aaron Vanston, a front-end developer based in Melbourne, Australia. I specialise in delivering rich customer-centric experiences. Currently focusing on ReactJS applications.
       </Description>
     </Wrapper>
   );
