@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import '../../styles/code-theme.css'
+import '../../styles/gist.css'
 import media from '../../utils/media'
 
 const Content = styled.div`
