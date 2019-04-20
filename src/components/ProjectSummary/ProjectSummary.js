@@ -42,7 +42,6 @@ const ProjectSummary = ({ projects }) => {
         const { frontmatter, id, excerpt } = projectNode.node
         const project = { ...frontmatter, id, excerpt }
         const hero = project.hero.childImageSharp.sizes
-        console.log(project)
         return (
           <Col key={project.id} >
             <PostLink to={project.path}>
