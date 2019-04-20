@@ -14,7 +14,7 @@ const Content = styled.div`
 
   /* Overrides */
   > blockquote, details, dl, ol, p, pre, table, ul {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-top: 0;
   }
 

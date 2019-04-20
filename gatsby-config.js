@@ -64,6 +64,11 @@ module.exports = {
             resolve: `@raae/gatsby-remark-oembed`,
             options: {
               usePrefix: true,
+              providers: {
+                settings: {
+                  Twitter: { theme: 'dark' },
+                }
+              }
             },
           },
           {
@@ -76,6 +81,7 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
