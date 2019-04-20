@@ -2,6 +2,7 @@
 path: "/posts/most-impractical-phone-no-input"
 date: "2016-12-02"
 title: "Most impractical Phone no. input"
+subtitle: "The most efficient at being inefficient"
 ---
 
 Out of curiosity, I went out of my way to build one of the most impractical mobile phone inputs.

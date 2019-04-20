@@ -2,6 +2,7 @@
 path: "/projects/reaction-timer"
 date: "2016-02"
 title: "Reaction Timer game"
+subtitle: "Test your reaction time with this little game"
 hero: "./reactiontimer.png"
 type: ["game"]
 ---
