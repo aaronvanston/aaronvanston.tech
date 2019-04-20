@@ -45,7 +45,7 @@ const ProjectSummary = ({ projects }) => {
         return (
           <Col key={project.id} >
             <PostLink to={project.path}>
-              <Image sizes={hero} />
+              <Image sizes={{ ...hero, aspectRatio: 16 / 9 }} />
               <SummaryContainer>
                 <Title>{project.title}</Title>
                 <Excerpt>{project.subtitle || project.excerpt}</Excerpt>
