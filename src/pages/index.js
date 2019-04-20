@@ -7,6 +7,7 @@ import Hero from '../components/Hero/Hero'
 import Container from '../components/Container/Container'
 import HomeSection from '../components/HomeSection/HomeSection'
 import PostSummary from '../components/PostSummary/PostSummary'
+import ProjectSummary from '../components/ProjectSummary/ProjectSummary'
 
 const Home = ({ data: { posts, projects } }) => (
   <Page>
@@ -15,8 +16,7 @@ const Home = ({ data: { posts, projects } }) => (
     </Container>
 
     <HomeSection title="Recent Projects">
-      {/* Temp Section while project summary is created */}
-      <PostSummary posts={projects.edges} />
+      <ProjectSummary projects={projects.edges} />
     </HomeSection>
 
     <HomeSection title="Latest Posts" flipPattern>
@@ -43,6 +43,7 @@ export const query = graphql`
             date(formatString: "DD MMMM YYYY")
             path
             title
+            subtitle
           }
         }
       }
@@ -52,7 +53,7 @@ export const query = graphql`
         fileAbsolutePath: { regex: "/content/projects/" }
        }
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 5
+      limit: 4
     ) {
       edges {
         node {
@@ -62,6 +63,14 @@ export const query = graphql`
             date(formatString: "DD MMMM YYYY")
             path
             title
+            subtitle
+            hero {
+              childImageSharp{
+                sizes(maxWidth: 1024) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }

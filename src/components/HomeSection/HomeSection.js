@@ -22,13 +22,21 @@ const PatternWrapper = styled.div`
 const ContentWrapper = styled.div`
   @supports (display: grid) {
     position: relative;
-    top: -5rem;
+    margin-top: -7rem;
+  }
+`
+
+const Section = styled.section`
+  margin-bottom: 3rem;
+
+  :last-child {
+    margin-bottom: 0;
   }
 `
 
 const HomeSection = ({ title, flipPattern, children }) => {
   return (
-    <section>
+    <Section>
       <PatternWrapper>
         <PatternBlock flipPattern={flipPattern} />
       </PatternWrapper>
@@ -39,7 +47,7 @@ const HomeSection = ({ title, flipPattern, children }) => {
           {children}
         </ContentWrapper>
       </Container>
-    </section>
+    </Section>
   );
 };
 
