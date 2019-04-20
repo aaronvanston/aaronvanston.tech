@@ -30,6 +30,49 @@ $ yarn build
 
 This will generate a `./public` directory with the static site contents. This can now be used within a S3 bucket or using a simpel webserver to serve the assets.
 
+### Content
+
+All content is stored within markdown files located in the `content/posts/` or `/content/projects/` folders. These Are used at build time to generate the various pages within the blog and projects index. 
+
+In order to create a new posts/project you create a new markdwn file (and/or directory if there are associated assets) within one of the directories. This file requires the following frontmatter:
+
+```markdown
+  ---
+  path: "/projects/project-name" 
+  date: "2019-04-25"
+  title: "Project title"
+  hero: "./hero.png"
+  ---
+```
+
+**Note:** the hero image is optional for a file within the `content/posts/` directory.
+
+### Embedding 
+
+Within the posts and projects markdown files you can embeded various 3rd party content, these include:
+
+#### Gist
+
+```markdown
+ <!-- shortcode structure -->
+`gist:<GIST_HASH>#<FILE_NAME>.css`
+ 
+ <!-- live example -->
+`gist:29bc06aabef814bd230481371eee6aec#tooltip1.css`
+```
+
+#### Oembed
+
+Which allows for things like twitter and codepen
+
+```markdown
+<!-- shortcode structure -->
+`oembed: <URL>`
+
+<!-- live example -->
+`oembed: https://codepen.io/aaronvanston/pen/pEjkNq`
+```
+
 ## License
 
 Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
