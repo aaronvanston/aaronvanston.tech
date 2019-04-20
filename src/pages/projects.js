@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Page from '../components/Page/Page'
 import PageTitle from '../components/PageTitle/PageTitle'
 import Container from '../components/Container/Container'
-import PostSummary from '../components/PostSummary/PostSummary'
+import ProjectSummary from '../components/ProjectSummary/ProjectSummary'
 import Meta from '../components/Meta/Meta'
 
 const Projects = ({ data: { allMarkdownRemark: { edges: projects } } }) => {
@@ -13,7 +13,7 @@ const Projects = ({ data: { allMarkdownRemark: { edges: projects } } }) => {
       <Meta title="Projects" />
       <Container>
         <PageTitle>My projects —</PageTitle>
-        <PostSummary posts={projects} />
+        <ProjectSummary projects={projects} />
       </Container>
     </Page>
   )
@@ -37,6 +37,13 @@ export const query = graphql`
             path
             title
             subtitle
+            hero {
+              childImageSharp{
+                sizes(maxWidth: 1024) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }
