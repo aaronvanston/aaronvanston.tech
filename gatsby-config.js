@@ -45,6 +45,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-external-links",
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1024,
+            },
+          },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: 'aaronvanston',
+              includeDefaultCss: true
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
@@ -52,15 +68,6 @@ module.exports = {
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
-            },
-          },
-          {
-            resolve: "gatsby-remark-external-links",
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1024,
             },
           },
         ],

@@ -8,6 +8,12 @@ hero: "./hero.jpg"
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nunc
 
+
 ![alt text](/inline.jpeg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus ligula nunc
+
+
+`gist:aaronvanston/6af0a8c886499662bae7#browser-stats-1.css`
+
+/aaronvanston/6af0a8c886499662bae7#browser-stats-1.css

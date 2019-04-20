@@ -13,19 +13,19 @@ const Content = styled.div`
   `}
 
   /* Overrides */
-  blockquote, details, dl, ol, p, pre, table, ul {
+  > blockquote, details, dl, ol, p, pre, table, ul {
     margin-bottom: 1rem;
     margin-top: 0;
   }
 
   /* Lists */
-  ol, ul {
+  > ol, ul {
     margin-top: 0;
     padding-left: 2rem;
   }
 
   /* Code and Syntax  Highlighting */
-  pre {
+  > pre {
     background-color: ${props => props.theme.colour.offWhite};
     border-radius: 3px;
     font-size: 0.875rem;
@@ -36,7 +36,7 @@ const Content = styled.div`
   }
 
   /* Tables */
-  table {
+  > table {
     display: block;
     overflow: auto;
     width: 100%;
@@ -59,7 +59,7 @@ const Content = styled.div`
   }
 
   /* Blockquotes */
-  blockquote {
+  > blockquote {
     margin: 0;
     border-left: 0.25rem solid ${props => props.theme.colour.lightGrey};
     color: ${props => props.theme.lightTextColour};
@@ -67,7 +67,7 @@ const Content = styled.div`
   }
 
   /* Horizontal Rule */
-  hr {
+  > hr {
     overflow: hidden;
     background: transparent;
     background-color: ${props => props.theme.colour.lightGrey};
