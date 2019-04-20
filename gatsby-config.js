@@ -65,6 +65,10 @@ module.exports = {
             options: {
               usePrefix: true,
               providers: {
+                include: [
+                  'Twitter',
+                  'Codepen',
+                ],
                 settings: {
                   Twitter: { theme: 'dark' },
                 }
