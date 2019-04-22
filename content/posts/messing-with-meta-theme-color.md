@@ -9,7 +9,9 @@ A few days ago I came across a website that changed my Chrome’s address bar a 
 
 The theme color is set within a meta tag within the head, simply fill the content with a color and you’re all set!
 
-`gist:b2063d1ae0f9d30bcb10#theme-colour.html`
+```html
+<meta name="theme-color" content="#db5945">
+```
 
 I then wanted to test if this could be updated and if so how fast. Results are pretty good, I hooked it up to a button that on click will generate a random color apply that to `theme-color` and also the button border. Results:
 

@@ -54,6 +54,21 @@ module.exports = {
             },
           },
           {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              usePrefix: true,
+              providers: {
+                include: [
+                  'Twitter',
+                  'Codepen',
+                ],
+                settings: {
+                  Twitter: { theme: 'dark' },
+                }
+              }
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
