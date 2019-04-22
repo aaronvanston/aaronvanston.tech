@@ -54,13 +54,6 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-gist",
-            options: {
-              username: 'aaronvanston',
-              includeDefaultCss: false,
-            },
-          },
-          {
             resolve: `@raae/gatsby-remark-oembed`,
             options: {
               usePrefix: true,
