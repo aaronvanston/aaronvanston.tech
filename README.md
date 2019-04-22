@@ -51,16 +51,6 @@ In order to create a new posts/project you create a new markdwn file (and/or dir
 
 Within the posts and projects markdown files you can embeded various 3rd party content, these include:
 
-#### Gist
-
-```markdown
- <!-- shortcode structure -->
-`gist:<GIST_HASH>#<FILE_NAME>.css`
- 
- <!-- live example -->
-`gist:29bc06aabef814bd230481371eee6aec#tooltip1.css`
-```
-
 #### Oembed
 
 Which allows for things like twitter and codepen
