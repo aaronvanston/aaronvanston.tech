@@ -31,7 +31,11 @@ To make things easier we won’t start off with any of the fancy animations on h
 
 Our first bit of CSS will be applied directly to the data attribute itself to help align the tail and tooltip body. Apply the following styles
 
-`gist:29bc06aabef814bd230481371eee6aec#tooltip1.css`
+```css
+[data-tip] {
+  position: relative;
+}
+```
 
 The `[data-tip]` targets all elements with the data attribute of “tip”. We apply the position relative, so the children elements can be positioned `relative` to it.
 
@@ -39,7 +43,20 @@ The `[data-tip]` targets all elements with the data attribute of “tip”. We a
 
 Next the Tail Styles. To accomplish a tail and a message body, we will be using a CSS pseudo class of `:before` and `:after`. Create a CSS selector to target the `[data-tip]` before pseudo class and add the following CSS:
 
-`gist:29bc06aabef814bd230481371eee6aec#tooltip2.css`
+
+```css
+
+[data-tip]:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 6px);
+  margin-top: -6px;
+  pointer-events: none;
+  border: 6px solid transparent;
+  border-bottom-color: #333;
+}
+```
 
 The pseudo `:before` and `:after` classes utilise a CSS property called content, meaning the content it will inject either before or after the selected element. In our case, we want no content so we include an empty string. We position `absolute` to our parent item, push our items height out with `top: 100%`, we position it exactly half way through the parent element (50% – the width of the tail which is 6px), we set the `pointer-event` to none to prevent it from targeting any mouse events, we set a `6px` transparent border around the entire element and finally set the bottom border to `#333` creating the triangle.
 
@@ -47,7 +64,23 @@ The pseudo `:before` and `:after` classes utilise a CSS property called content,
 
 Now comes the interesting part. We will do something very similar to the tail however now we will use the `:after` and specify the tooltip in our content. Create another CSS selector on the `:after` pseudo class.
 
-`gist:29bc06aabef814bd230481371eee6aec#tooltip3.css`
+```css
+[data-tip]:after {
+  content: attr(data-tip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: 6px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  z-index: 100;
+  transform: translate(-50%, 0);
+}
+```
 
 This is pretty much the same as the before with some differences, such as within content we are now specifying `attr(data-tip)` which brings in the text content of the data attribute data-tip (very cool!). In addition, we also have a transform `translate(-50%, 0);` on the `:after` class, this will center our element against the center of the link.
 
@@ -59,11 +92,28 @@ Firstly let’s create a selector that will target both :before and :after, you 
 
 Inside this selector lets set the default state to hidden by setting our visibility to hidden and `opacity` to `0`;
 
-`gist:29bc06aabef814bd230481371eee6aec#tooltip4.css`
+
+```css
+[data-tip]:before,
+[data-tip]:after {
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+```
 
 Duplicate this current selector of both before and `:after`, add a `:hover` pseudo class to each (just before the `:before` and `:after`) and remove the styles inside this block. Like so:
 
-`gist:29bc06aabef814bd230481371eee6aec#tooltip5.css`
+
+```css
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+```
 
 BAM! our tooltip is now functioning! It will now show and hide on hover!
 

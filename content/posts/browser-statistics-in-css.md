@@ -19,13 +19,63 @@ How this is accomplished is through a range of available media queries and SASS 
 
 Lets take a look at a specific example:
 
-`gist:6af0a8c886499662bae7#browser-stats.html`
+```html
+<div class="container">
+	<p class="stat__size-width">Size (Width): </p>
+	<p class="stat__size-height">Size (Height): </p>
+	<p class="stat__orientation">Orientation: </p>
+	<p class="stat__medium">Medium: </p>
+	<p class="stat__colour">Colour: </p>
+	<p class="stat__resolution">Resolution: </p>
+</div>
+```
 
 That’s our HTML code. Its just a series of `<p>` tags with a class that corresponds to the stat that are going to display. Lets take a further look at the orientation stat (this one is quite easy to show).
 
 In our CSS compiled from a SCSS or SASS file we have:
 
-`gist:6af0a8c886499662bae7#browser-stats-2.css`
+```scss
+/* ORIENTATION */
+@media (orientation: landscape) {
+	.stat__orientation:after { 
+		content: "Landscape"
+	}
+}
+@media (orientation: portrait) {
+	.stat__orientation:after { 
+		content: "Portrait"; 
+	}
+}
+```
+
+We are using the media query of ‘orientation‘ to determine if the browser is in landscape or portrait mode. On that condition we want to apply a content element **after** (using the :after selector) the existing text already displayed. This example is quite easy because it only really has two options to choose from. When we start getting into statistics such height and width which have almost infinite possibilities that’s when the code becomes inefficient .
+
+For example, lets look at width:
+
+```scss
+/* WIDTH */
+$width: 2000;
+
+@for $i from 500 through $width {
+	@media (min-width: #{$i}px) {
+		.stat__size-width:after {
+			content: "#{$i}px";
+			}
+	}
+}
+
+@media (min-width: 2001px) {
+	.stat__size-width:after {
+		content: "Greater than 2000px"; 
+	} 
+}
+
+@media (max-width: 499px) {
+	.stat__size-width:after {
+		content: "Less than 500px"; 
+	} 
+}
+```
 
 This is where SASS really helps out as we are actually generating an individual media query for each pixel within a range. First we set a variable of the highest value in the range, in this case 2000.  Using a SASS for loop we generate the following code from a starting point of 500 through to our highest value of 2000 (these figures represent the width in pixels).
 
