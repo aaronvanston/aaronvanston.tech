@@ -6,7 +6,7 @@ subtitle: "Presentation at REA Group TKO event"
 hero: "./css-misery.png"
 ---
 
-James Formica and myself had the opportunity to talk at REA Groups first TKO (Technical Kick Off) event last year. We wanted to talk about CSS, but we didnt want it to be the usual: "This is what you're doing wrong" talk. We wanted to show you the pure pain and misery of CSS done wrong, then hopefully you will chose another path.
+James Formica and myself had the opportunity to talk at REA Groups first TKO (Technical Kick Off) event last year. We wanted to talk about CSS, but we didn't want it to be the usual: "This is what you're doing wrong" talk. We wanted to show you the pure pain and misery of CSS done wrong, then hopefully you will chose another path.
 
 **Watch here:** https://www.youtube.com/watch?v=Q7Tbgh-XShY&
 
