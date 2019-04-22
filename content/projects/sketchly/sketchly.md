@@ -2,7 +2,7 @@
 path: "/projects/sketchly"
 date: "2018-03-23"
 title: "Sketchly"
-subtitle: "Interactive story using drawings hack-day project"
+subtitle: "Interactive story using drawings, hack-day project"
 hero: "./sketchly.png"
 type: ["game"]
 ---
