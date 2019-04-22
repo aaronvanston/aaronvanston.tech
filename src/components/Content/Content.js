@@ -18,6 +18,12 @@ const Content = styled.div`
     margin-top: 0;
   }
 
+  /* Images */
+  > p > img {
+    display: block;
+    max-width: 100%;
+  }
+
   /* Lists */
   > ol, ul {
     margin-top: 0;
