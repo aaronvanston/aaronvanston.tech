@@ -10,4 +10,4 @@ I was fortunate able to present at a recent MelbCSS meetup. I presented on CSS G
 
 The presentation was recorded, you can view it here: https://www.youtube.com/watch?v=zMtxVyf_6Ts
 
-Slides can be found here: https://www.youtube.com/watch?v=zMtxVyf_6Ts
+Slides can be found here: https://slides.com/aaronvanston/css-grid-8
