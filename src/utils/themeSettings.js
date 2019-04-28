@@ -24,7 +24,7 @@ const theme = {
   baseTextColour: colour.darkGrey,
   lightTextColour: colour.grey,
   highlightColour: colour.primary,
-  linkColor: colour.primary,
+  linkColor: colour.primaryDark,
 
   backgroundColour: colour.white,
   backgroundColourOverflow: colour.black,
