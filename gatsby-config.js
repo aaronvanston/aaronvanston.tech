@@ -3,6 +3,7 @@ module.exports = {
     title: `AaronVanston Tech Portfolio`,
     description: `A tech portfolio for Aaron Vanston, Front-end developer in Melbourne.`,
     author: `@aaronvanston`,
+    siteUrl: `https://aaronvanston.tech`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -85,6 +86,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-139228508-1",
+      },
+    },
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-offline',
       options: {
