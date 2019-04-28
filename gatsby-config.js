@@ -85,12 +85,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        navigateFallbackWhitelist: [],
-      },
-    },
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-netlify`
   ],
 }
