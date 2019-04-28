@@ -1,6 +1,6 @@
 ---
 path: "/posts/css-grid-snake"
-date: "2019-04-28"
+date: "2019-03-28"
 title: "CSS Grid Snake"
 subtitle: "Testing out CSS Grid by making a the classic snake game in CSS"
 hero: "./css-grid-snake.png"
