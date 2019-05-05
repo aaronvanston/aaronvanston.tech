@@ -11,13 +11,13 @@ import PostHeader from '../components/PostHeader/PostHeader'
 const PostTemplate = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { title, date, hero, subtitle } = frontmatter
+  const { title, date, hero, subtitle, tech } = frontmatter
 
   return (
     <Page>
       <Meta title={title} />
       <Container tight>
-        <PostHeader title={title} subtitle={subtitle} date={date} />
+        <PostHeader title={title} subtitle={subtitle} date={date} tech={tech} />
       </Container>
       <HeroImage heroImage={hero} />
       <Container tight>
@@ -38,6 +38,7 @@ export const pageQuery = graphql`
         path
         title
         subtitle
+        tech
         hero {
           childImageSharp{
             sizes(maxWidth: 1024) {

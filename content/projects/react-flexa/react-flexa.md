@@ -5,6 +5,7 @@ title: "react-flexa"
 subtitle: "Open source responsive React Flexbox grid system."
 hero: "./react-flexa.png"
 type: ["tool", "open-source"]
+tech: ["react", "styled-components"]
 ---
 
 ## [react-flexa github repo](https://github.com/aaronvanston/react-flexa)

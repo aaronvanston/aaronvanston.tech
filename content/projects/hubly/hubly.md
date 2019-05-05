@@ -5,6 +5,7 @@ title: "Hubly"
 subtitle: "Find a remote working space near you and save the planet!"
 hero: "./hubly.png"
 type: ["tool", "hack-day"]
+tech: ["react", "Google place API"]
 ---
 
 Another hack-day or REA.io project, this one on the theme of "MUDA" (waste). We thought we would combine this theme with our REA Group line of business, Spacely (Short Term and Shared Work Space in Australia).

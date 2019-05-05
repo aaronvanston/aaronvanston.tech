@@ -4,6 +4,7 @@ date: "2015-04"
 title: "Whispir.io website"
 hero: "./whispir-io.jpg"
 type: ["client website"]
+tech: ["javascript", "bootstrap"]
 ---
 
 The website developed for [whispir.io](https://whispir.io/) was the first major website project at Whispir. Overall a really fast (1.5 weeks) and fun project to turn around. The website itself is based of a bootstrap core that sits on top of a PHP backed. As a result its really quite easy to extend.

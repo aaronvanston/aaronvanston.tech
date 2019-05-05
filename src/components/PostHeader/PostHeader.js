@@ -36,11 +36,23 @@ const Date = styled.p`
   `}
 `
 
-const PostHeader = ({ title, subtitle, date }) => {
+const TechUsed = styled.p`
+  font-size: 1rem;
+
+  & > span {
+    font-family: monospace;
+    margin-left: 0.5rem;
+  }
+`
+
+const PostHeader = ({ title, subtitle, date, tech }) => {
   return (
     <Wrapper>
       <Title>{title}</Title>
       {subtitle && <SubTitle>{subtitle}</SubTitle>}
+      {tech &&
+        <TechUsed>Built using: <span>{tech.join(", ")}</span></TechUsed>
+      }
       <Date>{date}</Date>
       <div>—</div>
     </Wrapper>

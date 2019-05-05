@@ -5,6 +5,7 @@ title: "Sketchly"
 subtitle: "Interactive story using drawings, hack-day project"
 hero: "./sketchly.png"
 type: ["game", "hack-day"]
+tech: ["react", "redux", "Google Quick Draw"]
 ---
 
 ### [Play Sketchly](https://sketchly.netlify.com/)

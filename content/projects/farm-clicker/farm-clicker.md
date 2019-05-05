@@ -5,6 +5,7 @@ title: "farmclicker"
 subtitle: "Idle clicker game built using React + Redux"
 hero: "./farmclicker.png"
 type: ["game"]
+tech: ["react","redux", "styled-components"]
 ---
 
 Farmclicker is an idle clicker game based on gathering/selling resources. This style of games resembles the likes of [Cookie clicker](http://orteil.dashnet.org/cookieclicker/) or [Clicking bad](http://clickingbad.nullism.com/).
