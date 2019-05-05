@@ -33,20 +33,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
-        title
-        subtitle
-        tech
-        hero {
-          childImageSharp{
-            sizes(maxWidth: 1024) {
-                ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
+      ...MdFrontmatter
     }
   }
 `

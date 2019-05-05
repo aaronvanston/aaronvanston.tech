@@ -28,25 +28,7 @@ export const query = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 100
     ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 80)
-          frontmatter {
-            date(formatString: "DD MMMM YYYY")
-            path
-            title
-            subtitle
-            hero {
-              childImageSharp{
-                sizes(maxWidth: 1024) {
-                    ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-        }
-      }
+      ...PostSummary
     }
   }
 `

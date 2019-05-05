@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from 'gatsby'
-// import { Link } from "gatsby"
 
 import Page from '../components/Page/Page'
 import Hero from '../components/Hero/Hero'
@@ -35,18 +34,7 @@ export const query = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 5
     ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 80)
-          frontmatter {
-            date(formatString: "DD MMMM YYYY")
-            path
-            title
-            subtitle
-          }
-        }
-      }
+      ...PostSummary
     }
     projects: allMarkdownRemark(
       filter: {  
@@ -55,25 +43,7 @@ export const query = graphql`
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 4
     ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 80)
-          frontmatter {
-            date(formatString: "DD MMMM YYYY")
-            path
-            title
-            subtitle
-            hero {
-              childImageSharp{
-                sizes(maxWidth: 1024) {
-                    ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-        }
-      }
+      ...PostSummary
     }
   }
 `
