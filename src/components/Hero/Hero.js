@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const H1 = styled.h1`
   font-size: 2rem;
   margin: 0;
+  color: ${props => props.theme.colour.primary};
 
   ${media.tablet`
     font-size: 4rem;
