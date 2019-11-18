@@ -49,10 +49,10 @@ const Hero = () => {
     <Wrapper>
       <H1>
         <Sub>Aaron Vanston —</Sub><br />
-        Front-end developer.
+        Engineering Lead
       </H1>
       <Description>
-        Hi, I'm Aaron Vanston, a front-end developer based in Melbourne, Australia. I specialise in delivering rich customer-centric experiences. Currently focusing on ReactJS applications.
+        Hi, I'm Aaron Vanston, a engineering lead based in Melbourne, Australia. I specialise in delivering rich customer-centric experiences. Currently focusing on ReactJS applications.
       </Description>
     </Wrapper>
   );
